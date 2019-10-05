@@ -246,14 +246,14 @@ client.on('message', async message => {
     });
     
     setTimeout(() => {
-       coolDown.remove(message.author.id);
+       coolDown.remove(message.author.id)"541002506084286467";
     },86400000);
     }
 });
 
 client.on('message', message => {
      if(!message.channel.guild) return;
-                if(message.content.startsWith(prefix + 'allbots')) {
+                if(message.content.startsWith(prefix + 'R!llbots')) {
 
     
     if (message.author.bot) return;
