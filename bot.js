@@ -226,7 +226,7 @@ message.channel.send(`**${message.author.username}, your :credit_card: balance i
 });
 
 client.on('message', async message => {
-    let amount = 5000000;
+    let amount = 1000000;
     if(message.content.startsWith(prefix + "daily")) {
     if(message.author.bot) return;
     if(coolDown.has(message.author.id)) return message.channel.send(`**:stopwatch: | ${message.author.username}, your daily :yen: credits refreshes in \`\`1 day\`\`.**`);
@@ -246,7 +246,7 @@ client.on('message', async message => {
     });
     
     setTimeout(() => {
-       coolDown.remove(message.author.id)"541002506084286467";
+       coolDown.remove(message.author.id);
     },86400000);
     }
 });
